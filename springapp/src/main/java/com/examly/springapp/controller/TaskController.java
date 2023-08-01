@@ -21,8 +21,7 @@ public class TaskController
     
     @PostMapping("/saveTask")
     public Taskentity saveTask(@RequestBody Taskentity taskentity){
-        Taskentity output = service.saveTask(taskentity);
-        return output;
+        return service.saveTask(taskentity);
     }
 
     @GetMapping("/changeStatus")
